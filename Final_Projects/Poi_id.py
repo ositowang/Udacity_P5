@@ -176,8 +176,8 @@ DT_CLF.fit(features_train,labels_train)
 
 clf_DT = DT_CLF.best_estimator_
 
-print "ecision Tree Classifier",clf_DT.score(features_train,labels_train)
-print "Decision Tree Classifier:", round(time()-Starting_Time1, 3), "s"
+print "Decision Tree Classifier",clf_DT.score(features_train,labels_train)
+print "Decision Tree Classifier time elapsed:", round(time()-Starting_Time1, 3), "s"
 
 ##  Test Point
 print "Decision Tree Classifier Test Results:",test_classifier(clf_DT,my_dataset,features_list)
@@ -200,11 +200,11 @@ Ran_CLF.fit(features_train,labels_train)
 
 clf_RF = Ran_CLF.best_estimator_
 
-print "\nRandomForest:",clf_RF.score(features_train,labels_train)
-print "Random Forest Classifier:", round(time()-Starting_Time2, 3), "s"
+print "RandomForest:",clf_RF.score(features_train,labels_train)
+print "Random Forest Classifier time elapsed:", round(time()-Starting_Time2, 3), "s"
 
 ##  Test Point
-print "\nRandomForest Test Results:",test_classifier(clf_RF,my_dataset,features_list)
+print "RandomForest Test Results:",test_classifier(clf_RF,my_dataset,features_list)
 ### Task 5: Tune your classifier to achieve better than .3 precision and recall 
 ### using our testing script. Check the tester.py script in the final project
 ### folder for details on the evaluation method, especially the test_classifier
